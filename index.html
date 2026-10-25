@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vikash Kumar — Senior Test Engineer</title>
+  <meta name="description" content="Resume and portfolio of Vikash Kumar, Senior Test Engineer. Experience, skills, and contact details." />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Open Graph (edit when you paste your content) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Vikash Kumar — Senior Test Engineer" />
+  <meta property="og:description" content="Resume and portfolio of Vikash Kumar." />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Applied before paint: prevents a light/dark flash on load.
+    (function () {
+      document.documentElement.classList.add('js');
+      try {
+        var saved = localStorage.getItem('theme');
+        var dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', saved || (dark ? 'dark' : 'light'));
+      } catch (e) {}
+    })();
+  </script>
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">VK</span>
+        <span class="brand-name">Vikash Kumar</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch color theme">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+        </button>
+        <button class="btn btn-ghost btn-sm hide-sm" id="printBtn" type="button">Save PDF</button>
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-main">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Open to new opportunities</p>
+        <h1 id="hero-title">Vikash Kumar</h1>
+        <p class="role">Senior Test Engineer</p>
+        <p class="lede">
+          Senior Test Engineer with 8.3 years of experience in automation and manual testing,
+          specializing in Selenium WebDriver and Python with PyTest. Strong Telecom domain expertise
+          across ETL Testing, Rating, Billing, OSS, BSS, Mediation, Provisioning, Charging, 4G/5G,
+          FCAPS and KPI Reporting. Proficient in API automation using PyTest and Requests, data
+          validation, defect tracking, test reporting, CI/CD integration and Git.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Get in touch</a>
+          <a class="btn btn-outline" href="resume.pdf" download>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 19.5h16"/></svg>
+            Download résumé
+          </a>
+        </div>
+
+        <ul class="hero-meta">
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            Bangalore, India
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg>
+            <a href="mailto:sahvikash60@gmail.com">sahvikash60@gmail.com</a>
+          </li>
+          <li>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1z"/></svg>
+            <a href="tel:7829003521">+91 7829003521</a>
+          </li>
+        </ul>
+      </div>
+
+      <aside class="hero-card" aria-label="At a glance">
+        <h2 class="card-title">At a glance</h2>
+        <dl class="facts">
+          <div><dt>Experience</dt><dd>8.3+ years</dd></div>
+          <div><dt>Domain</dt><dd>Telecom (OSS/BSS, 4G/5G, Core Networks)</dd></div>
+          <div><dt>Currently</dt><dd>Senior Test Engineer, Ericsson</dd></div>
+          <div><dt>Languages</dt><dd>English, Hindi</dd></div>
+        </dl>
+        <div class="card-links">
+          <a href="https://www.linkedin.com/in/vikash-kumar28/" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 10v7M8 7.2v.1M12 17v-4a2.5 2.5 0 0 1 5 0v4"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/vikashsah2357" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.2-4-2.2-6-2.8m12 5.3v-3.4c0-1 .1-1.4-.5-2 2.3-.3 4.5-1.2 4.5-5.2a4 4 0 0 0-1.1-2.8 3.7 3.7 0 0 0-.1-2.8s-.9-.3-3 1.1a10 10 0 0 0-5.6 0C7.1 5.1 6.2 5.4 6.2 5.4a3.7 3.7 0 0 0-.1 2.8A4 4 0 0 0 5 11c0 4 2.2 4.9 4.5 5.2-.6.6-.6 1.3-.5 2v3.4"/></svg>
+            GitHub
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></svg>
+            Website
+          </a>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section wrap" id="about" aria-labelledby="about-title">
+      <div class="section-head">
+        <p class="section-kicker">01</p>
+        <h2 id="about-title">About</h2>
+      </div>
+      <div class="about-grid">
+        <div class="prose">
+          <p>
+            Senior Test Engineer with 8.3 years of experience in automation and manual testing,
+            specializing in Selenium WebDriver and Python with PyTest. Strong Telecom domain expertise
+            across ETL Testing, Rating, Billing, OSS, BSS, Mediation, Provisioning, Charging, 4G/5G,
+            FCAPS and KPI Reporting. Proficient in API automation using PyTest and Requests, data
+            validation, defect tracking, test reporting, CI/CD integration and Git. Hands-on with n8n
+            for building AI agents and workflow automations, with working knowledge of Generative AI,
+            Agentic AI and Kiro CLI to speed up test design and automation. Works closely with
+            cross-functional teams to improve test processes and deliver reliable releases.
+          </p>
+          <p>
+            I bring a results-driven approach to test quality, combining strong technical skills in
+            test automation frameworks with deep domain knowledge of telecom software. I have
+            contributed to OSS, BSS, Rating, Billing, and core network components including PGW,
+            MME, HSS, HLR, VLR, SGSN, AMF, and UDM. I'm passionate about leveraging Generative
+            AI and workflow automation tools to accelerate test coverage and improve release confidence.
+          </p>
+        </div>
+        <ul class="stats">
+          <li><strong>8.3+</strong><span>Years in test engineering</span></li>
+          <li><strong>Telecom</strong><span>Domain specialist — OSS, BSS, Core Networks</span></li>
+          <li><strong>Automation</strong><span>Selenium, PyTest, REST API testing</span></li>
+          <li><strong>CI/CD</strong><span>Git integration and automated regression</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section wrap" id="experience" aria-labelledby="experience-title">
+      <div class="section-head">
+        <p class="section-kicker">02</p>
+        <h2 id="experience-title">Experience</h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <span class="period">2022 — Present</span>
+            <span class="place">Bangalore</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Senior Test Engineer <span class="at">·</span> <span class="company">Ericsson Global</span></h3>
+            <p class="timeline-summary">
+              Designed and executed Selenium WebDriver automation scripts for web application testing using Python.
+            </p>
+            <ul class="bullets">
+              <li>Designed and executed Selenium WebDriver automation scripts for web application testing using Python.</li>
+              <li>Developed rApp test cases focusing on Lifecycle Management processes aligned with O-RAN specifications.</li>
+              <li>Validated test results and logged defects in Jira.</li>
+              <li>Ran sanity tests in Staging and Production environments to confirm release stability.</li>
+              <li>Executed dynamic service activations to verify integration and performance.</li>
+              <li>Contributed to OSS, BSS, Rating, Billing, and core networks including PGW, MME, HSS, HLR, VLR, SGSN, AMF, UDM.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <span class="period">2020 — January 2022</span>
+            <span class="place">Bangalore</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Test Consultant <span class="at">·</span> <span class="company">CSG International</span></h3>
+            <p class="timeline-summary">
+              Wrote test cases from user stories and features, analyzed features and user stories in Confluence
+              to establish testing criteria, validated test results, logged defects in Jira and fetched logs
+              using UNIX. Tested SingleView telecom product flows including Customer Creation, Rating, Billing
+              and Invoicing. Performed end-to-end testing of the SingleView product.
+            </p>
+            <ul class="bullets">
+              <li>Wrote test cases from user stories and features.</li>
+              <li>Analyzed features and user stories in Confluence to establish testing criteria.</li>
+              <li>Validated test results, logged defects in Jira and fetched logs using UNIX.</li>
+              <li>Tested SingleView telecom product flows, including Customer Creation, Rating, Billing and Invoicing.</li>
+              <li>Performed end-to-end testing of the SingleView product.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <span class="period">July 2018 — July 2020</span>
+            <span class="place">Bangalore</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Test Analyst <span class="at">·</span> <span class="company">IBM India Pvt. Ltd (Experis IT Pvt. Ltd)</span></h3>
+            <p class="timeline-summary">
+              Executed end-to-end application data flow testing utilizing Selenium and UFT. Finalized test cases
+              and automation regression scripts to ensure comprehensive coverage. Validated test results to
+              confirm alignment with project specifications. Logged and tracked defects in HP-ALM. Performed
+              end-to-end testing of the SingleView product.
+            </p>
+            <ul class="bullets">
+              <li>Executed end-to-end application data flow testing utilizing Selenium and UFT.</li>
+              <li>Finalized test cases and automation regression scripts to ensure comprehensive coverage.</li>
+              <li>Validated test results to confirm alignment with project specifications.</li>
+              <li>Logged and tracked defects in HP-ALM.</li>
+              <li>Performed end-to-end testing of the SingleView product.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section wrap" id="projects" aria-labelledby="projects-title">
+      <div class="section-head">
+        <p class="section-kicker">03</p>
+        <h2 id="projects-title">Selected work</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-top">
+            <h3>rApp Lifecycle Test Automation</h3>
+            <span class="card-year">2024</span>
+          </div>
+          <p>
+            Designed and implemented automated test cases for O-RAN rApp lifecycle management
+            processes, covering onboarding, configuration, and decommissioning flows aligned
+            with O-RAN specifications.
+          </p>
+          <ul class="tags" aria-label="Technologies">
+            <li>Selenium WebDriver</li><li>Python</li><li>PyTest</li><li>O-RAN</li>
+          </ul>
+          <a class="card-link" href="#" aria-label="Read case study: rApp Lifecycle Test Automation">
+            Case study
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>SingleView End-to-End Testing</h3>
+            <span class="card-year">2021</span>
+          </div>
+          <p>
+            Performed comprehensive end-to-end testing of the SingleView telecom product,
+            covering Customer Creation, Rating, Billing and Invoicing flows. Validated
+            data integrity across OSS/BSS integrations and core network components.
+          </p>
+          <ul class="tags" aria-label="Technologies">
+            <li>UFT</li><li>Selenium</li><li>SQL</li><li>SingleView</li>
+          </ul>
+          <a class="card-link" href="#" aria-label="Read case study: SingleView End-to-End Testing">
+            Case study
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>ETL & Billing Validation Framework</h3>
+            <span class="card-year">2020</span>
+          </div>
+          <p>
+            Built automated validation frameworks for ETL testing and billing management
+            processes, ensuring data accuracy across rating engines and charge calculation
+            pipelines for 4G/5G core networks.
+          </p>
+          <ul class="tags" aria-label="Technologies">
+            <li>Python</li><li>SQL</li><li>ETL</li><li>Billing</li>
+          </ul>
+          <a class="card-link" href="#" aria-label="Read case study: ETL & Billing Validation Framework">
+            Case study
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>CI/CD Regression Pipeline</h3>
+            <span class="card-year">2022</span>
+          </div>
+          <p>
+            Integrated automated test suites into CI/CD pipelines using Git, enabling
+            continuous regression validation for each release. Reduced manual regression
+            effort by approximately 40% and caught critical defects pre-production.
+          </p>
+          <ul class="tags" aria-label="Technologies">
+            <li>PyTest</li><li>Git</li><li>CI/CD</li><li>n8n</li>
+          </ul>
+          <a class="card-link" href="#" aria-label="Read case study: CI/CD Regression Pipeline">
+            Case study
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section wrap" id="skills" aria-labelledby="skills-title">
+      <div class="section-head">
+        <p class="section-kicker">04</p>
+        <h2 id="skills-title">Skills</h2>
+      </div>
+
+      <div class="skill-grid">
+        <div class="skill-group">
+          <h3>Test Automation</h3>
+          <ul class="tags">
+            <li>Selenium WebDriver</li><li>Python</li><li>PyTest</li>
+            <li>Rest Assured</li><li>BDD with Cucumber</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>API Automation</h3>
+          <ul class="tags">
+            <li>Automated REST API testing</li><li>Requests</li><li>API validation</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>AI & Workflow Automation</h3>
+          <ul class="tags">
+            <li>Generative AI</li><li>Agentic AI workflows</li><li>n8n workflow automation</li>
+            <li>Kiro CLI (AI-assisted development)</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Telecom Domain</h3>
+          <ul class="tags">
+            <li>OSS and BSS systems</li><li>Rating and billing management</li>
+            <li>Core network technologies</li><li>FCAPS</li><li>4G/5G</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION + CERTS ============ -->
+    <section class="section wrap" id="education" aria-labelledby="education-title">
+      <div class="section-head">
+        <p class="section-kicker">05</p>
+        <h2 id="education-title">Education & certifications</h2>
+      </div>
+
+      <div class="split">
+        <div>
+          <h3 class="split-title">Education</h3>
+          <div class="entry">
+            <p class="entry-title">B. Tech in Computer Science and Engineering</p>
+            <p class="entry-sub">College of Engineering Bhubaneswar · 2012 — 2017</p>
+            <p class="entry-note">GPA: 69.5% May 2017</p>
+          </div>
+        </div>
+        <div>
+          <h3 class="split-title">Certifications</h3>
+          <ul class="cert-list">
+            <li><span>ISTQB Foundation Level Certificate</span><span class="cert-year">#HRJ#06d662b2-39e8-4912-a40a-ef2f874353ae#</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section wrap" id="contact" aria-labelledby="contact-title">
+      <div class="contact-card">
+        <p class="section-kicker">06</p>
+        <h2 id="contact-title">Let's work together</h2>
+        <p>
+          I'm open to senior product design roles and selective consulting work.
+          The fastest way to reach me is email.
+        </p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:sahvikash60@gmail.com">sahvikash60@gmail.com</a>
+          <button class="btn btn-outline" type="button" id="copyEmail" data-email="sahvikash60@gmail.com">Copy email</button>
+        </div>
+        <ul class="contact-links">
+          <li><a href="https://www.linkedin.com/in/vikash-kumar28/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/vikashsah2357" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="#" target="_blank" rel="noopener noreferrer">Website</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year">2026</span> Vikash Kumar. Built with care.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+
+      /* ---------- Theme ---------- */
+      var toggle = document.getElementById('themeToggle');
+      function setTheme(mode) {
+        root.setAttribute('data-theme', mode);
+        try { localStorage.setItem('theme', mode); } catch (e) {}
+        toggle.setAttribute('aria-label', mode === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', mode === 'dark' ? '#0b0f17' : '#ffffff');
+      }
+      setTheme(root.getAttribute('data-theme') || 'light');
+      toggle.addEventListener('click', function () {
+        setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+      });
+
+      /* ---------- Mobile nav ---------- */
+      var navToggle = document.getElementById('navToggle');
+      var nav = document.getElementById('nav');
+      function closeNav() {
+        nav.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-label', 'Open menu');
+        document.body.classList.remove('nav-open');
+      }
+      navToggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('is-open');
+        navToggle.setAttribute('aria-expanded', String(open));
+        navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        document.body.classList.toggle('nav-open', open);
+      });
+      nav.addEventListener('click', function (e) {
+        if (e.target.closest('a')) closeNav();
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeNav();
+      });
+      window.addEventListener('resize', function () {
+        if (window.innerWidth > 860) closeNav();
+      });
+
+      /* ---------- Sticky header shadow ---------- */
+      var header = document.querySelector('.site-header');
+      var onScroll = function () {
+        header.classList.toggle('is-stuck', window.scrollY > 8);
+      };
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+
+      /* ---------- Print ---------- */
+      var printBtn = document.getElementById('printBtn');
+      if (printBtn) printBtn.addEventListener('click', function () {
+        // Download the resume PDF file
+        window.location.href = 'resume.pdf';
+      });
+
+      /* ---------- Copy email ---------- */
+      var copyBtn = document.getElementById('copyEmail');
+      if (copyBtn) {
+        copyBtn.addEventListener('click', function () {
+          var email = copyBtn.getAttribute('data-email');
+          var done = function () {
+            var original = copyBtn.textContent;
+            copyBtn.textContent = 'Copied';
+            setTimeout(function () { copyBtn.textContent = original; }, 1800);
+          };
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(email).then(done).catch(function () {});
+          } else {
+            var input = document.createElement('input');
+            input.value = email;
+            document.body.appendChild(input);
+            input.select();
+            try { document.execCommand('copy'); done(); } catch (e) {}
+            document.body.removeChild(input);
+          }
+        });
+      }
+
+      /* ---------- Active nav link ---------- */
+      var links = Array.prototype.slice.call(nav.querySelectorAll('a[href^="#"]'));
+      var sections = links
+        .map(function (a) { return document.querySelector(a.getAttribute('href')); })
+        .filter(Boolean);
+
+      var setActive = function (id) {
+        links.forEach(function (a) {
+          var on = a.getAttribute('href') === '#' + id;
+          a.classList.toggle('is-active', on);
+          if (on) a.setAttribute('aria-current', 'true');
+          else a.removeAttribute('aria-current');
+        });
+      };
+
+      if ('IntersectionObserver' in window) {
+        var spy = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) setActive(entry.target.id);
+          });
+        }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+        sections.forEach(function (s) { spy.observe(s); });
+      }
+
+      /* ---------- Reveal on scroll ---------- */
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var revealables = document.querySelectorAll('.section-head, .timeline-item, .card, .skill-group, .entry, .cert-list li, .contact-card, .hero-card, .stats li');
+      if (!reduce && 'IntersectionObserver' in window) {
+        revealables.forEach(function (el, i) {
+          el.classList.add('reveal');
+          el.style.transitionDelay = Math.min(i % 4, 3) * 60 + 'ms';
+        });
+        var io = new IntersectionObserver(function (entries, obs) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+        revealables.forEach(function (el) { io.observe(el); });
+      }
+
+      /* ---------- Year ---------- */
+      var year = document.getElementById('year');
+      if (year) year.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
