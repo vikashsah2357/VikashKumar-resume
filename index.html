@@ -31,10 +31,17 @@
 
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="#top" aria-label="Home">
-        <span class="brand-mark" aria-hidden="true">VK</span>
-        <span class="brand-name">Vikash Kumar</span>
-      </a>
+      <div class="brand">
+        <button class="brand-avatar" id="profilePhotoToggle" type="button" aria-label="View profile photo" aria-expanded="false" aria-controls="profilePhotoPopover">
+          <img src="Professional%20South%20Asian%20Male%20Headshot.png" alt="" width="36" height="36" />
+        </button>
+        <a class="brand-name" href="#top" aria-label="Home">Vikash Kumar</a>
+      </div>
+      <div class="profile-photo-popover" id="profilePhotoPopover" hidden>
+        <img src="Professional%20South%20Asian%20Male%20Headshot.png" alt="Vikash Kumar professional profile photo" width="220" height="220" />
+        <p>Vikash Kumar</p>
+        <span>Senior Test Engineer</span>
+      </div>
 
       <nav class="nav" id="nav" aria-label="Primary">
         <a href="#about">About</a>
@@ -433,6 +440,27 @@
       setTheme(root.getAttribute('data-theme') || 'light');
       toggle.addEventListener('click', function () {
         setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+      });
+
+      /* ---------- Profile photo popover ---------- */
+      var profilePhotoToggle = document.getElementById('profilePhotoToggle');
+      var profilePhotoPopover = document.getElementById('profilePhotoPopover');
+      function closeProfilePhoto() {
+        profilePhotoPopover.hidden = true;
+        profilePhotoToggle.setAttribute('aria-expanded', 'false');
+      }
+      profilePhotoToggle.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var open = profilePhotoPopover.hidden;
+        profilePhotoPopover.hidden = !open;
+        profilePhotoToggle.setAttribute('aria-expanded', String(open));
+      });
+      profilePhotoPopover.addEventListener('click', function (e) {
+        e.stopPropagation();
+      });
+      document.addEventListener('click', closeProfilePhoto);
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeProfilePhoto();
       });
 
       /* ---------- Mobile nav ---------- */
